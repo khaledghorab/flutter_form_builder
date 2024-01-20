@@ -376,6 +376,7 @@ class FormBuilderTextField extends FormBuilderFieldDecoration<String> {
             final state = field as _FormBuilderTextFieldState;
 
             return TextField(
+              onChanged: onChanged,
               restorationId: restorationId,
               controller: state._effectiveController,
               focusNode: state.effectiveFocusNode,
